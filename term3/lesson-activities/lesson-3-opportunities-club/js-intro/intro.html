@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b1022">
+    <meta name="description" content="A standalone JavaScript fundamentals session: a brief guide and a hands-on exercise for variables, sentences, decisions, functions and loops.">
+    <title>Introduction to JavaScript · Slide Deck</title>
+    <link rel="stylesheet" href="session-slides.css">
+  </head>
+  <body class="workshop">
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="../index.html" aria-label="Back to all slide decks"><span class="brand-mark" aria-hidden="true">&lt;/&gt;</span><span><strong>Software Engineering</strong><small>Alliance Girls High School</small></span></a>
+        <div class="session-label"><span class="live-dot" aria-hidden="true"></span>FOUNDATIONS <b>/</b> JAVASCRIPT</div>
+        <button class="icon-button" id="fullscreen-button" type="button" aria-label="Enter fullscreen" title="Enter fullscreen"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"></path></svg></button>
+      </header>
+      <main class="deck-shell">
+        <div class="deck-heading"><p class="eyebrow">STANDALONE SESSION · 90 MIN · JS FUNDAMENTALS</p><p class="deck-title">Introduction to JavaScript: Thinking Like a Program</p></div>
+        <section class="slide-viewport" aria-label="Introduction to JavaScript presentation slides">
+
+          <article class="slide slide--blue is-active" id="slide-1" aria-roledescription="slide" aria-label="1 of 13: Thinking like a program">
+            <div class="slide-content">
+              <p class="eyebrow eyebrow--light">JS FUNDAMENTALS · CONSOLE ONLY</p><h1>Thinking in code.<br><em>One line at a time.</em></h1>
+              <p class="lead">"Software engineering" starts with a few small ideas, used over and over. Today we learn five of them, in the browser console — no HTML or CSS needed.</p>
+              <p class="checkpoint">Open DevTools → Console, or start a new CodePen and use the JS panel.</p>
+              <div class="hero-meta"><span>TOFA × Alliance Girls Alumni</span><span>Grade 10 · Standalone session</span></div>
+            </div><span class="slide-number slide-number--light">01</span>
+          </article>
+
+          <article class="slide slide--gold" id="slide-2" aria-roledescription="slide" aria-label="2 of 13: The five stops">
+            <div class="slide-content">
+              <p class="eyebrow">THE ROUTE · 5 IDEAS</p><h2>Five ideas.<br><em>Five small wins.</em></h2>
+              <ul class="activity">
+                <li><strong>Variables &amp; data types</strong>Label a value and know what kind of thing it is.</li>
+                <li><strong>Building sentences</strong>Drop variables into a message with template literals.</li>
+                <li><strong>Making a decision</strong><code>if</code> / <code>else</code> — choosing what happens next.</li>
+                <li><strong>Functions</strong>A reusable recipe: an input in, a result out.</li>
+                <li><strong>Arrays &amp; loops</strong>A list, and one instruction that repeats for every item.</li>
+              </ul>
+              <p class="checkpoint">Each idea gets a GUIDE slide, then an EXERCISE slide. Try the exercise before moving on.</p>
+            </div><span class="slide-number">02</span>
+          </article>
+
+          <article class="slide slide--cream" id="slide-3" aria-roledescription="slide" aria-label="3 of 13: Guide — variables and data types">
+            <div class="slide-content">
+              <p class="eyebrow">GUIDE 1 · 5 MIN</p><h2>Label a value.<br><em>Know its type.</em></h2>
+              <pre class="workshop-code"><code>let name = "Amara";
+let age = 16;
+let isPrefect = true;
+
+console.log(typeof name);       // "string"
+console.log(typeof age);        // "number"
+console.log(typeof isPrefect);  // "boolean"</code></pre>
+              <p class="checkpoint"><code>let</code> creates a labelled box for a value. A string is text in quotes; a number has none; a boolean is true or false.</p>
+            </div><span class="slide-number">03</span>
+          </article>
+
+          <article class="slide slide--dark" id="slide-4" aria-roledescription="slide" aria-label="4 of 13: Exercise — variables and data types">
+            <div class="slide-content">
+              <p class="eyebrow eyebrow--light">EXERCISE 1 · 5 MIN</p><h2>Three boxes.<br><em>Your own values.</em></h2>
+              <ul class="activity">
+                <li><strong>Name</strong>Write <code>let</code> for your own name.</li>
+                <li><strong>Number</strong>Write <code>let</code> for your age, or any number.</li>
+                <li><strong>Boolean</strong>Write <code>let</code> for a true-or-false fact about you.</li>
+              </ul>
+              <p class="checkpoint">Run <code>typeof</code> on all three. Do the results match what you expected?</p>
+            </div><span class="slide-number slide-number--light">04</span>
+          </article>
+
+          <article class="slide slide--blue" id="slide-5" aria-roledescription="slide" aria-label="5 of 13: Guide — building sentences">
+            <div class="slide-content">
+              <p class="eyebrow eyebrow--light">GUIDE 2 · 5 MIN</p><h2>Drop values<br><em>into a sentence.</em></h2>
+              <pre class="workshop-code"><code>let school = "Alliance Girls High School";
+
+console.log(`Hello, ${name}!`);
+console.log(`${name} studies at ${school}.`);
+console.log(`Next year is ${2026 + 1}.`);</code></pre>
+              <p class="checkpoint">Backticks make a template literal. Anything inside <code>${ }</code> is calculated and dropped in — even maths.</p>
+            </div><span class="slide-number slide-number--light">05</span>
+          </article>
+
+          <article class="slide slide--cream" id="slide-6" aria-roledescription="slide" aria-label="6 of 13: Exercise — building sentences">
+            <div class="slide-content">
+              <p class="eyebrow">EXERCISE 2 · 5 MIN</p><h2>Introduce<br><em>yourself.</em></h2>
+              <ul class="activity">
+                <li><strong>Write</strong>One template literal using at least two of your variables from Exercise 1.</li>
+                <li><strong>Stretch</strong>Add a small calculation inside <code>${ }</code>, like your age next year.</li>
+              </ul>
+              <p class="checkpoint">Compare sentences with a partner. Same variables, different wording.</p>
+            </div><span class="slide-number">06</span>
+          </article>
+
+          <article class="slide slide--green" id="slide-7" aria-roledescription="slide" aria-label="7 of 13: Guide — making a decision">
+            <div class="slide-content">
+              <p class="eyebrow">GUIDE 3 · 5 MIN</p><h2>If this is true,<br><em>do that.</em></h2>
+              <pre class="workshop-code"><code>let ticketsLeft = 3;
+
+if (ticketsLeft > 0) {
+  console.log("Tickets available!");
+} else {
+  console.log("Sold out.");
+}</code></pre>
+              <p class="checkpoint">Change <code>ticketsLeft</code> to <code>0</code> and predict the output before you run it. <code>===</code> means "exactly equal to" — three signs, not two.</p>
+            </div><span class="slide-number">07</span>
+          </article>
+
+          <article class="slide slide--gold" id="slide-8" aria-roledescription="slide" aria-label="8 of 13: Exercise — making a decision">
+            <div class="slide-content">
+              <p class="eyebrow">EXERCISE 3 · 5 MIN</p><h2>Pass<br><em>or try again.</em></h2>
+              <ul class="activity">
+                <li><strong>Set up</strong>Make a variable called <code>score</code> with any number.</li>
+                <li><strong>Decide</strong>Write <code>if</code> / <code>else</code>: log "Pass" when <code>score &gt;= 50</code>, else "Try again".</li>
+                <li><strong>Test</strong>Change <code>score</code> three times and rerun.</li>
+              </ul>
+              <p class="checkpoint">Keep this code — you will reuse the rule inside a function next.</p>
+            </div><span class="slide-number">08</span>
+          </article>
+
+          <article class="slide slide--pink" id="slide-9" aria-roledescription="slide" aria-label="9 of 13: Guide — functions">
+            <div class="slide-content">
+              <p class="eyebrow">GUIDE 4 · 6 MIN</p><h2>A function<br><em>is a recipe.</em></h2>
+              <pre class="workshop-code"><code>function greet(studentName) {
+  return `Welcome, ${studentName}!`;
+}
+
+console.log(greet("Amara"));
+console.log(greet("Zawadi"));</code></pre>
+              <p class="checkpoint"><code>studentName</code> is the parameter — what the recipe needs. <code>return</code> is what it hands back. Each call can use a different value.</p>
+            </div><span class="slide-number">09</span>
+          </article>
+
+          <article class="slide slide--cream" id="slide-10" aria-roledescription="slide" aria-label="10 of 13: Exercise — functions">
+            <div class="slide-content">
+              <p class="eyebrow">EXERCISE 4 · 6 MIN</p><h2>Package<br><em>your rule.</em></h2>
+              <pre class="workshop-code"><code>function isPassingGrade(score) {
+  // your rule from Exercise 3 goes here
+}</code></pre>
+              <ul class="activity">
+                <li><strong>Write</strong>Make <code>isPassingGrade(score)</code> return <code>true</code> or <code>false</code>.</li>
+                <li><strong>Test</strong>Call it with three different numbers and log each result.</li>
+              </ul>
+            </div><span class="slide-number">10</span>
+          </article>
+
+          <article class="slide slide--dark" id="slide-11" aria-roledescription="slide" aria-label="11 of 13: Guide — arrays and loops">
+            <div class="slide-content">
+              <p class="eyebrow eyebrow--light">GUIDE 5 · 6 MIN</p><h2>One instruction.<br><em>Every item.</em></h2>
+              <pre class="workshop-code"><code>const clubs = ["Coding club", "Debate team", "Science fair"];
+
+console.log(clubs.length);   // 3
+console.log(clubs[0]);       // "Coding club"
+
+for (const club of clubs) {
+  console.log(club);
+}</code></pre>
+              <p class="checkpoint">An array is a list in order — counting starts at 0. <code>for...of</code> visits every item and runs the same code for each.</p>
+            </div><span class="slide-number slide-number--light">11</span>
+          </article>
+
+          <article class="slide slide--blue" id="slide-12" aria-roledescription="slide" aria-label="12 of 13: Exercise — arrays and loops">
+            <div class="slide-content">
+              <p class="eyebrow eyebrow--light">EXERCISE 5 · GUIDED PRACTICE · 10 MIN</p><h2>Loop,<br><em>decide, repeat.</em></h2>
+              <ul class="activity">
+                <li><strong>List</strong>Make an array of at least five club or subject names.</li>
+                <li><strong>Loop</strong>Print each one with its position, e.g. <code>`1: ${clubs[0]}`</code>.</li>
+                <li><strong>Combine</strong>Inside the loop, call <code>isPassingGrade</code> (or a new function) and branch with <code>if</code> / <code>else</code>.</li>
+              </ul>
+              <p class="checkpoint">Work in pairs. One drives the keyboard, one checks each prediction before Enter.</p>
+            </div><span class="slide-number slide-number--light">12</span>
+          </article>
+
+          <article class="slide slide--pink" id="slide-13" aria-roledescription="slide" aria-label="13 of 13: What you will have learned">
+            <div class="slide-content">
+              <p class="eyebrow">BY THE END OF TODAY</p><h2>What you<br><em>can now do.</em></h2>
+              <ul class="activity">
+                <li><strong>Store &amp; identify</strong>Create variables and name their data type with <code>typeof</code>.</li>
+                <li><strong>Compose</strong>Build a sentence from variables using a template literal.</li>
+                <li><strong>Decide</strong>Write an <code>if</code> / <code>else</code> that checks a condition with <code>===</code>, <code>&gt;</code> or <code>&gt;=</code>.</li>
+                <li><strong>Reuse</strong>Write a function with a parameter that returns a value.</li>
+                <li><strong>Repeat</strong>Loop through an array with <code>for...of</code> and act on every item.</li>
+              </ul>
+              <p class="checkpoint">Exit ticket: in your own words, explain a variable, a function and a loop to a friend who missed today.</p>
+            </div><span class="slide-number">13</span>
+          </article>
+
+        </section>
+        <div class="deck-controls">
+          <button class="control-button" id="previous-button" type="button" aria-label="Previous slide"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"></path></svg><span>Back</span></button>
+          <div class="progress-wrap"><div class="progress-track" aria-hidden="true"><span id="progress-bar"></span></div><div class="slide-counter" aria-live="polite"><strong id="current-slide">01</strong><span>/</span><span>13</span></div></div>
+          <button class="control-button control-button--next" id="next-button" type="button" aria-label="Next slide"><span>Next</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"></path></svg></button>
+        </div>
+        <nav class="slide-dots" aria-label="Choose a slide">
+          <button class="dot is-active" type="button" aria-label="Go to slide 1" aria-current="true"></button><button class="dot" type="button" aria-label="Go to slide 2"></button><button class="dot" type="button" aria-label="Go to slide 3"></button><button class="dot" type="button" aria-label="Go to slide 4"></button><button class="dot" type="button" aria-label="Go to slide 5"></button><button class="dot" type="button" aria-label="Go to slide 6"></button><button class="dot" type="button" aria-label="Go to slide 7"></button><button class="dot" type="button" aria-label="Go to slide 8"></button><button class="dot" type="button" aria-label="Go to slide 9"></button><button class="dot" type="button" aria-label="Go to slide 10"></button><button class="dot" type="button" aria-label="Go to slide 11"></button><button class="dot" type="button" aria-label="Go to slide 12"></button><button class="dot" type="button" aria-label="Go to slide 13"></button>
+        </nav>
+        <p class="keyboard-hint"><span>←</span> <span>→</span> to navigate · <span>F</span> fullscreen</p>
+        <p class="sr-only" id="slide-status" aria-live="polite">Slide 1 of 13</p>
+      </main>
+    </div>
+    <script src="../script.js"></script>
+  </body>
+</html>
